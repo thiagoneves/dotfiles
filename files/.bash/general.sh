@@ -1,12 +1,13 @@
 export INSTALL_DIR=$HOME/local
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
-export EDITOR=vim
-export VISUAL=vim
+export EDITOR="vim"
+export VISUAL="vim"
 export GREP_OPTIONS="--color=auto"
 export GREP_COLOR="4;33"
+
 export HISTFILE="$HOME/.bash_history"
-export HISTSIZE=1000000
+export HISTSIZE=100000
 export HISTCONTROL=ignoreboth:erasedups
 
 export GEM_HOME=$INSTALL_DIR/ruby/gems
@@ -14,9 +15,6 @@ export GEM_PATH=$INSTALL_DIR/ruby/gems
 export NPM_HOME=$INSTALL_DIR/node/npm
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-export PATH="/usr/local/bin:$JAVA_HOME/bin:$PATH"
-
-export CDHISTORY="/tmp/cd-$USER"
 export PAGER="less"
 export LESS="-REX"
 export LESS_TERMCAP_mb=$'\E[04;33m'

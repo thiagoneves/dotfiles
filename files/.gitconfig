@@ -1,67 +1,38 @@
 [color]
-        diff = auto
-        status = auto
-        branch = auto
-        ui = true
+  branch = auto
+  diff = auto
+  status = auto
+  ui = true
 [color "diff"]
-        plain = black
-        meta = black
-        frag = cyan reverse
-        old = red
-        new = green
-        commit = yellow
-        whitespace = normal red
+  commit = yellow
+  frag = cyan reverse
+  meta = black
+  new = green
+  old = red
+  plain = black
+  whitespace = normal red
 [alias]
-        # Add
-        ad = add
-        aa = add .
-
-        # Commit
-        cm = commit -m
-        ca = commit --amend -m
-
-        # Checkout
-        co = checkout
-        cb = checkout -b
-
-        # Cherry-pick
-        cp = cherry-pick
-
-        # Diff
-        df = diff
-
-        # List
-        tl = tag -l
-        bl = branch -a
-        rl = remote -v
-
-        # Status
-        st = status -s
-
-        # Pull
-        pl   = pull
-        plo  = pull --rebase origin
-        plom = pull --rebase origin master
-        plog = pull --rebase origin gh-pages
-        plu  = pull --rebase upstream
-        plum = pull --rebase upstream master
-        plug = pull --rebase upstream gh-pages
-
-        # Push
-        ps   = push
-        pso  = push origin
-        psom = push origin master
-        psog = push origin gh-pages
-        psu  = push upstream
-        psum = push upstream master
-        psug = push upstream gh-pages
-
-        # Sync
-        sync = plu && pso
-
+  b = branch
+  ca = commit --amend
+  ci = commit
+  co = checkout
+  dw = diff --word-diff
+  fl = log -p
+  lg = log --oneline --decorate
+  sb = status -sb
+  sh = !git-sh
+  st = status
+  who = shortlog -s --
 [help]
-        autocorrect = 1
+  autocorrect = 1
 [branch]
-        autosetuprebase = always
+  autosetuprebase = always
 [push]
-        default = current
+  default = current
+[core]
+  excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
+[merge]
+  ff = only
+[fetch]
+  prune = true

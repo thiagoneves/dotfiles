@@ -1,0 +1,67 @@
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        ui = true
+[color "diff"]
+        plain = black
+        meta = black
+        frag = cyan reverse
+        old = red
+        new = green
+        commit = yellow
+        whitespace = normal red
+[alias]
+        # Add
+        ad = add
+        aa = add .
+
+        # Commit
+        cm = commit -m
+        ca = commit --amend -m
+
+        # Checkout
+        co = checkout
+        cb = checkout -b
+
+        # Cherry-pick
+        cp = cherry-pick
+
+        # Diff
+        df = diff
+
+        # List
+        tl = tag -l
+        bl = branch -a
+        rl = remote -v
+
+        # Status
+        st = status -s
+
+        # Pull
+        pl   = pull
+        plo  = pull --rebase origin
+        plom = pull --rebase origin master
+        plog = pull --rebase origin gh-pages
+        plu  = pull --rebase upstream
+        plum = pull --rebase upstream master
+        plug = pull --rebase upstream gh-pages
+
+        # Push
+        ps   = push
+        pso  = push origin
+        psom = push origin master
+        psog = push origin gh-pages
+        psu  = push upstream
+        psum = push upstream master
+        psug = push upstream gh-pages
+
+        # Sync
+        sync = plu && pso
+
+[help]
+        autocorrect = 1
+[branch]
+        autosetuprebase = always
+[push]
+        default = current

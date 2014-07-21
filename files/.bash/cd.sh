@@ -1,3 +1,3 @@
 cd() {
-  builtin cd "${@:-$HOME}" && pwd > $CDHISTORY;
+  builtin cd "${@:-$HOME}" && ls;
 }

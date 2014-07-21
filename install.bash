@@ -26,11 +26,6 @@ else
   exit 1
 fi
 
-if [[ -f "$dotfiles_zip" ]]; then
-  echo "#=> ERROR: Couldn't download ${dotfiles_url}." 
-  exit 1
-fi
-
 # Now, unzip the directory and
 rm -rf $dotfiles_dir
 unzip -q $dotfiles_zip -d /tmp

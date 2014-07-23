@@ -1,3 +1,4 @@
+alias ..="cd .."
 alias ll="ls -Glahs"
 alias ls="ls -Gh"
 alias cl="clear"

@@ -10,6 +10,11 @@ function switch() {
   mv $1_orig $2
 }
 
+# Rsync
+function rscp() {
+  rsync -vr --partial --progress -e ssh $1 $2
+}
+
 # Determine size of a file or total size of a directory
 function fs() {
   if du -b /dev/null > /dev/null 2>&1; then

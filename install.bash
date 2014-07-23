@@ -34,10 +34,10 @@ unzip -q $dotfiles_zip -d /tmp
 find ${dotfiles_dir}/files -maxdepth 1 -mindepth 1 -exec cp -R "{}" $HOME/ \;
  
 # Clone vundle.
-if [[ ! -d "$HOME/.vim/bundle/vundle" ]]; then
-  echo "#=> Cloning vim's vundle plugin"
-  git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle &> /dev/null
-fi
+# if [[ ! -d "$HOME/.vim/bundle/vundle" ]]; then
+#   echo "#=> Cloning vim's vundle plugin"
+#   git clone https://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle &> /dev/null
+# fi
 
 # Source the initalization file.
 . $HOME/.bash/init.sh

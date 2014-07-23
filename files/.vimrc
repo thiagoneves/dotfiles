@@ -1,9 +1,5 @@
 set nocompatible
 
-if filereadable(expand("~/.vundle.vim"))
-  source ~/.vundle.vim
-endif
-
 syntax on
 
 autocmd FileType vim          set et sw=2 ts=2 sts=2

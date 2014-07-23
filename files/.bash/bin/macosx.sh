@@ -47,6 +47,9 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 # Add dock on the left
 defaults write com.apple.dock orientation -string left
 
+# Add dock on the center
+defaults write com.apple.dock pinning -string middle;
+
 # Disable hide and show the Dock
 defaults write com.apple.dock autohide -bool false
 

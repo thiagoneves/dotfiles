@@ -3,6 +3,7 @@ alias ls="ls -Gh"
 alias cl="clear"
 alias psgrep="ps aux | grep -v grep | grep"
 alias reload="source ~/.bash_profile"
+alias subl="subl -n"
 
 # PS
 alias psa="ps aux"

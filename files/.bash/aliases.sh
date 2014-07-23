@@ -1,3 +1,4 @@
+# Shortcuts
 alias ..="cd .."
 alias ll="ls -Glahs"
 alias ls="ls -Gh"
@@ -12,6 +13,7 @@ alias psg="ps aux | grep "
 alias psr="ps aux | grep ruby"
 alias psj="ps aux | grep java"
 
+# Edit hosts file
 alias hosts="sudo vim /etc/hosts"
 
 # IP addresses
@@ -32,6 +34,17 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 
 # Copy public key to pasteboard
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Enable/ Disable Spotlight
+alias spoton="sudo mdutil -a -i on"
+alias spotoff="sudo mdutil -a -i off"
+
+# Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
+alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm update npm -g; npm update -g; sudo gem update --system; sudo gem update"
 
 # Update dotfiles
 alias redot="curl -Ls https://raw.github.com/thiagoneves/dotfiles/master/install.bash | bash"

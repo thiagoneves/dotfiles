@@ -29,4 +29,3 @@ set visible-stats on
 
 # Kill words with ctrl+w
 "\C-w": backward-kill-word
-ß

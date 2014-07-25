@@ -13,3 +13,14 @@ function gifify() {
     echo "proper usage: gifify <input_movie.mov>. You DO need to include extension."
   fi
 }
+
+# search and kill port
+function killport() {
+  lsof -i TCP:$1 | grep LISTEN | awk '{print $2}' | xargs kill -9
+  echo "Port" $1 "found and killed."
+}
+
+# copy ssh key
+function cpssh() {
+  pbcopy < ~/.ssh/id_rsa.pub
+}

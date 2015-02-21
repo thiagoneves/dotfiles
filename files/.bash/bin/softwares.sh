@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# ngrep
+brew install ngrep
+
 # homebrew-cask
 brew tap phinze/homebrew-cask
 brew install brew-cask

@@ -86,6 +86,9 @@ __prompt () {
   else
     PS1="\n${RUBY_PROMPT}${BASE_COLOR}\w\a${NO_COLOR}\n\$ "
   fi
+  
+  PWD=`pwd`
+  printf "\e]1;${PWD##*/}\a"
 }
 
 PROMPT_COMMAND=__prompt

@@ -8,7 +8,7 @@ alias reload="source ~/.bash_profile"
 alias subl="subl -n"
 
 alias python='python3'
-alias python2='python'
+alias pip='pip3'
 
 # PS
 alias psa="ps aux"

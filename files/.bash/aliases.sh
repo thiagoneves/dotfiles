@@ -7,6 +7,9 @@ alias psgrep="ps aux | grep -v grep | grep"
 alias reload="source ~/.bash_profile"
 alias subl="subl -n"
 
+alias python='python3'
+alias python2='python'
+
 # PS
 alias psa="ps aux"
 alias psg="ps aux | grep "
